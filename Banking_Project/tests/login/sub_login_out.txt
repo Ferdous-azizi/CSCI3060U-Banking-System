@@ -1,0 +1,4 @@
+...
+Enter transaction:
+Error: Already logged in.
+Enter transaction:

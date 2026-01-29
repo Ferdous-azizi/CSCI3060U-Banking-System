@@ -1,0 +1,4 @@
+Enter kind of session:
+Error: Invalid session type.
+Enter kind of session:
+Enter transaction:

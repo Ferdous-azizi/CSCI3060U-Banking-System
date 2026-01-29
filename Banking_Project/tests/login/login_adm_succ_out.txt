@@ -1,0 +1,2 @@
+Enter kind of session:
+Enter transaction:
