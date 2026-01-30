@@ -1,0 +1,6 @@
+login
+Admin
+withdrawal
+12345
+100.0
+logout

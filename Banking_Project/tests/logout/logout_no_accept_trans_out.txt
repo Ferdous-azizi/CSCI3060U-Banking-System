@@ -1,0 +1,10 @@
+Enter kind of session:
+Enter transaction:
+ERROR! account not logged into.
+ERROR! account not logged into.
+ERROR! account not logged into.
+ERROR! account not logged into.
+ERROR! account not logged into.
+ERROR! account not logged into.
+ERROR! account not logged into.
+ERROR! account not logged into.

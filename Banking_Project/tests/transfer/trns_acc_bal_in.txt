@@ -1,0 +1,7 @@
+login
+admin
+transfer
+12345
+54321
+99999999999999999999
+logout

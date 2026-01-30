@@ -1,0 +1,8 @@
+login
+standard
+John Doe
+withdrawal
+12346
+logout
+
+

@@ -1,0 +1,6 @@
+login
+admin
+deposit
+12345
+-1
+logout

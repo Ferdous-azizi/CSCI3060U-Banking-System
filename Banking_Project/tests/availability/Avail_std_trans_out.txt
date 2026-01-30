@@ -1,0 +1,15 @@
+Enter kind of session:
+Enter Account Holder's name:
+Enter transaction:
+...
+Enter transaction:
+...
+Enter transaction:
+...
+Enter transaction:
+...
+Enter transaction:
+Invalid transaction
+Invalid transaction
+Invalid transaction
+Invalid transaction

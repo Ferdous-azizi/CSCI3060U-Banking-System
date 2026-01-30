@@ -1,0 +1,7 @@
+Enter kind of session:
+Enter transaction:
+Enter account number:
+Enter company name:
+Enter amount:
+Invalid input, please try again or logout
+Saving transaction history...

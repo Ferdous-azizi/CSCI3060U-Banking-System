@@ -1,0 +1,7 @@
+Enter kind of session:
+Enter account holder's name:
+Enter transaction:
+Enter account number:
+Enter account number to transfer to:
+Enter amount:
+saving transaction history...

@@ -1,0 +1,9 @@
+login
+standard
+John Doe
+paybill
+12346
+companyX
+2001.0
+2000.0
+logout

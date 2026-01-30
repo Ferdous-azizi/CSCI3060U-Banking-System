@@ -1,0 +1,6 @@
+login
+standard
+John Doe
+deposit
+12346
+logout

@@ -1,0 +1,5 @@
+Enter kind of session:
+Enter transaction:
+Enter account number:
+Enter amount:
+Saving transaction history...

@@ -1,0 +1,7 @@
+Enter kind of session:
+Enter transaction:
+Enter account number:
+Enter account number to transfer to:
+Enter amount:
+Invalid Input, please try again or logout
+saving transaction history...
