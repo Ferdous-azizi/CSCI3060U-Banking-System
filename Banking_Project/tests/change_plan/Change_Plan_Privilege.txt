@@ -1,0 +1,7 @@
+login standard
+20002
+changeplan
+Jane Smith
+20002
+NP
+logout
