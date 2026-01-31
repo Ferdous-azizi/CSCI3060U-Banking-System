@@ -1,0 +1,6 @@
+login standard
+12345
+disable
+John Doe
+10001
+logout
