@@ -1,0 +1,5 @@
+login admin
+John Doe
+delete
+Non Existent User
+logout
