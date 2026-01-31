@@ -1,0 +1,10 @@
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Enter admin name: John Doe
+Logged in as admin: John Doe
+Enter transaction: delete
+Enter account holder name: Empty Account User
+Enter account number: 9990003
+Account 9990003 deleted successfully
+Enter transaction: logout
+Transaction file written. Logged out.
