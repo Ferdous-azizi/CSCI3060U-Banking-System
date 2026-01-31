@@ -1,0 +1,6 @@
+login admin
+John Doe
+delete
+Test Delete User
+9990001
+logout
