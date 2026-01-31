@@ -1,0 +1,11 @@
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Logged in as admin
+Enter transaction: changeplan
+Enter account holder name: John Doe
+Enter account number: 1234567
+Current plan: NP (Non-Student)
+Change to SP (Student)? (yes/no): yes
+Payment plan changed successfully (NP → SP)
+Enter transaction: logout
+Transaction file written. Logged out.
