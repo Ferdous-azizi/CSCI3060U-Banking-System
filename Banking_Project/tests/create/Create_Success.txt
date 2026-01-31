@@ -1,0 +1,6 @@
+login admin
+00000
+create
+Alice Johnson
+500.00
+logout
