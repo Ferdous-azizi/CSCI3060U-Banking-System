@@ -1,0 +1,20 @@
+Welcome to the Bank System
+Enter session type (standard/admin): standard
+Enter account holder name: Alice Smith
+Logged in as: Alice Smith
+Enter transaction: changeplan
+Error: Transaction not available for standard sessions
+Enter transaction: logout
+Transaction file written. Logged out.
+
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Logged in as admin
+Enter transaction: changeplan
+Enter account holder name: Alice Smith
+Enter account number: 2345678
+Current plan: NP (Non-Student)
+Change to SP (Student)? (yes/no): yes
+Payment plan changed successfully (NP → SP)
+Enter transaction: logout
+Transaction file written. Logged out.
