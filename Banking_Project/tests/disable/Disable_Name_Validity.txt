@@ -1,0 +1,6 @@
+login admin
+00000
+disable
+NonExistent Name
+10001
+logout
