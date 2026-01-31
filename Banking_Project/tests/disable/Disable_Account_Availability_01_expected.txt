@@ -1,0 +1,19 @@
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Logged in as admin
+Enter transaction: disable
+Enter account holder name: Bob Wilson
+Enter account number: 3456789
+Account disabled successfully
+Enter transaction: logout
+Transaction file written. Logged out.
+
+Welcome to the Bank System
+Enter session type (standard/admin): standard
+Enter account holder name: Bob Wilson
+Logged in as: Bob Wilson
+Enter transaction: withdrawal
+Enter account number: 3456789
+Error: Account is disabled
+Enter transaction: logout
+Transaction file written. Logged out.
