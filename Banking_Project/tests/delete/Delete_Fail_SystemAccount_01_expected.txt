@@ -1,0 +1,10 @@
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Enter admin name: John Doe
+Logged in as admin: John Doe
+Enter transaction: delete
+Enter account holder name: 000
+Enter account number: 0000000
+Error: Cannot delete system account (0000000)
+Enter transaction: logout
+Transaction file written. Logged out.
