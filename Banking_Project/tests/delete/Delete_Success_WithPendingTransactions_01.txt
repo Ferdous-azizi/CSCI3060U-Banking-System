@@ -1,0 +1,6 @@
+login admin
+John Doe
+delete
+Active Account User
+9990004
+logout
