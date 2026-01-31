@@ -1,0 +1,8 @@
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Logged in as admin
+Enter transaction: changeplan
+Enter account holder name: Non Existent User
+Error: Account holder 'Non Existent User' not found
+Enter transaction: logout
+Transaction file written. Logged out.
