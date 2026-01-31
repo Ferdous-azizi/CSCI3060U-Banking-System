@@ -1,0 +1,9 @@
+login admin
+00000
+disable
+John Doe
+10001
+withdrawal
+10001
+10
+logout
