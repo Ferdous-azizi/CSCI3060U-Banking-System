@@ -1,0 +1,10 @@
+login
+admin
+create
+John Doe
+12345
+200
+create
+Jane Doe
+12345
+logout

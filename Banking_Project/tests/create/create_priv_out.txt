@@ -1,0 +1,4 @@
+Please enter session type:
+Please enter transaction:
+Error: Please enter a valid transaction
+Saving transaction history...

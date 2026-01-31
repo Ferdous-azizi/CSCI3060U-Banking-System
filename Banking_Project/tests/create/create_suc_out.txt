@@ -1,0 +1,7 @@
+Enter kind of session:
+Enter transaction:
+Enter name of account holder:
+Enter five-digit account number:
+Enter initial balance:
+Saving transaction to system...
+Saving transaction history...

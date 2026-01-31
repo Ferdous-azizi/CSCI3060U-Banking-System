@@ -1,0 +1,5 @@
+Enter kind of session:
+Enter transaction:
+Enter name of account holder:
+Error: entered name is more than 20 characters, please enter a valid name or logout
+Saving transaction history...

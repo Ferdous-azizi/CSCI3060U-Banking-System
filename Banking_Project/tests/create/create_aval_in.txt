@@ -1,0 +1,9 @@
+login
+admin
+create
+John Doe
+12345
+200
+deposit
+12345
+logout

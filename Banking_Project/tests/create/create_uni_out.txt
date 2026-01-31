@@ -1,0 +1,11 @@
+Enter kind of session:
+Enter transaction:
+Enter name of account holder:
+Enter five-digit account number:
+Enter initial balance:
+Saving transaction to system...
+Enter transaction:
+Enter name of account holder:
+Enter five-digit account number:
+Error: account number must be unique! please enter a valid account number or logout:
+Saving transaction history...
