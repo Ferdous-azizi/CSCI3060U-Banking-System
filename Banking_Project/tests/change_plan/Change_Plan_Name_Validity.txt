@@ -1,0 +1,7 @@
+login admin
+00000
+changeplan
+NonExistent Person
+20002
+NP
+logout
