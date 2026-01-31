@@ -1,0 +1,13 @@
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Error: Invalid admin name
+Enter admin name: Admin User
+Logged in as admin
+Enter transaction: changeplan
+Enter account holder name: Test User
+Enter account number: 9992016
+Current plan: NP (Non-Student)
+Change to SP (Student)? (yes/no): yes
+Payment plan changed successfully (NP → SP)
+Enter transaction: logout
+Transaction file written. Logged out.
