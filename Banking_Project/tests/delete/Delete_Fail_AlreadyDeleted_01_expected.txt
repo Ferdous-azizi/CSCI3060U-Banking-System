@@ -1,0 +1,21 @@
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Enter admin name: John Doe
+Logged in as admin: John Doe
+Enter transaction: delete
+Enter account holder name: Test Delete User
+Enter account number: 9990001
+Account 9990001 deleted successfully
+Enter transaction: logout
+Transaction file written. Logged out.
+
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Enter admin name: John Doe
+Logged in as admin: John Doe
+Enter transaction: delete
+Enter account holder name: Test Delete User
+Error: Account holder 'Test Delete User' not found
+Try again? (yes/no): no
+Enter transaction: logout
+Transaction file written. Logged out.
