@@ -1,0 +1,6 @@
+login admin
+John Doe
+delete
+Empty Account User
+9990003
+logout
