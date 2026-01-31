@@ -1,0 +1,10 @@
+Welcome to the Bank System
+Error: Please login first
+Enter session type (standard/admin): delete
+Invalid session type. Please enter 'standard' or 'admin': standard
+Enter account holder name: Test Delete User
+Error: Invalid account name
+Enter account holder name: Alice Smith
+Logged in as: Alice Smith
+Enter transaction: logout
+Transaction file written. Logged out.
