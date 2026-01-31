@@ -1,0 +1,7 @@
+Welcome to the Bank System
+Error: Please login first
+Enter session type (standard/admin): changeplan
+Invalid session type. Please enter 'standard' or 'admin': admin
+Logged in as admin
+Enter transaction: logout
+Transaction file written. Logged out.
