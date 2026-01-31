@@ -1,0 +1,9 @@
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Logged in as admin
+Enter transaction: disable
+Enter account holder name: John Doe
+Enter account number: 1111111
+Error: Account number 1111111 does not belong to John Doe
+Enter transaction: logout
+Transaction file written. Logged out.
