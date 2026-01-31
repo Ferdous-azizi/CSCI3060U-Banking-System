@@ -1,0 +1,9 @@
+Welcome to the Bank System
+Enter session type (standard/admin): admin
+Logged in as admin
+Enter transaction: changeplan
+Enter account holder name: 000
+Enter account number: 0000000
+Error: Cannot change plan for system account
+Enter transaction: logout
+Transaction file written. Logged out.
