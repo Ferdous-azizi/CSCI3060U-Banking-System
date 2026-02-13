@@ -1,4 +1,0 @@
-Error: Must login before performing transactions.
-Enter transaction:
-Enter kind of session:
-...
