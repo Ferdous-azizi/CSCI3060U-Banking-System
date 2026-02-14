@@ -1,11 +1,11 @@
-//package banking;
+package banking;
 
 import java.io.*;
 import java.util.*;
 
 
 public class FrontEnd {
-    private static boolean loggedIn = false;
+    private static boolean loggedIn = false; //flag for whether or not transactions can be accessed
     private static String sessionType = ""; // admin or standard
     private static List<String> accountList = new ArrayList<>(); //list of accounts
     private static List<String> transactionsList = new ArrayList<>(); //list of transactions
@@ -50,10 +50,12 @@ public class FrontEnd {
 
     //logic for handling each transaction
     //MISSING ACCOUNT VERIFICATION LOGIC AND CONSTRAINTS, TO BE DONE WHEN TESTING
+    //SWITCH STATEMENT FOR SIMPLE, CLEAR PROTOTYPE CODE, CAN BE ADJUSTED TO BE CLOSER TO DESIGN DOCUMENT
     private static void handleTransaction(String cmd, Scanner scanner) {
         // Add logic for transfer, deposit and etc. here
         switch (cmd) {
             case "withdrawal":
+                //method to withdraw from an account
                 if (sessionType.equals("admin")) {
                     System.out.print("Enter account holder's name: ");
                     holderName = scanner.nextLine();
@@ -71,6 +73,7 @@ public class FrontEnd {
                 }
                 break;
             case "create":
+                //method to create a new account, admin only
                 if (sessionType.equals("admin")) {
                     System.out.print("Enter new account holder's name: ");
                     String newAcc = scanner.nextLine();
@@ -84,8 +87,8 @@ public class FrontEnd {
                     System.out.println("ERROR: Admin only.");
                 }
                 break;
-            // Start here
             case "deposit":
+                //method to deposit into an account
                 if (sessionType.equals("admin")) {
                     System.out.print("Enter account holder's name: ");
                     holderName = scanner.nextLine();
@@ -99,6 +102,7 @@ public class FrontEnd {
                 System.out.println("Deposit processed");
                 break;
             case "transfer":
+                //method to transfer from one account to another
                 if (sessionType.equals("admin")) {
                     System.out.print("Enter account holder's name: ");
                     holderName = scanner.nextLine();
@@ -119,6 +123,7 @@ public class FrontEnd {
                 }
                 break;
             case "paybill":
+                //method to pay a bill to company
                 if (sessionType.equals("admin")) {
                     System.out.print("Enter account holder's name: ");
                     holderName = scanner.nextLine();
@@ -133,6 +138,7 @@ public class FrontEnd {
                 System.out.println("paybill processed");
                 break;
             case "delete":
+                //method to delete an account, admin only
                 if (sessionType.equals("admin")) {
                     System.out.print("Enter account holder's name: ");
                     String delAcc = scanner.nextLine();
@@ -145,6 +151,7 @@ public class FrontEnd {
                 }
                 break;
             case "disable":
+                //method to disable an account, admin only
                 if (sessionType.equals("admin")) {
                     System.out.print("Enter account holder's name: ");
                     String disAcc = scanner.nextLine();
@@ -157,6 +164,7 @@ public class FrontEnd {
                 }
                 break;
             case "changeplan":
+                //method to change account plan, admin only
                 if (sessionType.equals("admin")) {
                     System.out.print("Enter account holder's name: ");
                     String chplAcc = scanner.nextLine();
