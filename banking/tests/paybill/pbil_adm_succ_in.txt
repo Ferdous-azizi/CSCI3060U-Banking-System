@@ -1,7 +1,0 @@
-login
-admin
-paybill
-12345
-companyX
-100.0
-logout

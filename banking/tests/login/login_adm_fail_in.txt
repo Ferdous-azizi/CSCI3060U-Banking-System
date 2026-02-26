@@ -1,4 +1,0 @@
-login
-super-user
-admin
-logout

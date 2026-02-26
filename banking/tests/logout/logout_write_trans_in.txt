@@ -1,6 +1,0 @@
-login
-standard
-John Doe
-Withdrawal
-...
-logout

@@ -9,7 +9,7 @@ TO RUN:
     javac banking/FrontEnd.java
     java banking.FrontEnd banking\current_bank_accounts.txt banking\bank_account_transactions.txt
 */
-package banking;
+//package banking;
 
 import java.io.*;
 import java.util.*;

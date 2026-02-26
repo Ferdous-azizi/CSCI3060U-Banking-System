@@ -1,7 +1,0 @@
-withdrawal
-12345
-100.00
-login
-standard
-John Doe
-logout

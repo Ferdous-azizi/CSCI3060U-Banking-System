@@ -1,5 +1,0 @@
-login
-admin
-create
-Alexander Jonathan Desmond III
-logout
