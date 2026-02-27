@@ -1,7 +1,11 @@
-Enter kind of session:
-Enter account holder's name:
-Enter transaction:
-Enter account number:
-Enter amount to withdraw:
-Invalid Input, please try again or logout
-saving transaction history...
+Welcome to the Bank System
+Enter command: 
+Session type: 
+Logged in as standard
+Enter account holder's name: 
+Enter command:
+Enter account number: 
+Enter amount to withdraw: 
+ERROR: INVALID INPUT
+Enter command: 
+Logged out. Saving transaction file...
