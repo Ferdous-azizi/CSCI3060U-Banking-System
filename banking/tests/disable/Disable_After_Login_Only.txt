@@ -1,4 +1,0 @@
-disable
-John Doe
-10001
-logout
