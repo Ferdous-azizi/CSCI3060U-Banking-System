@@ -1,4 +1,6 @@
-Enter kind of session:
-Enter account holder's name:
-Error: Invalid account holder name.
-Enter kind of session:
+Welcome to the Bank System
+Enter command: 
+Session type: 
+Logged in as standard
+Enter account holder's name: 
+ERROR: INVALID NAME

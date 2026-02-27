@@ -1,3 +1,6 @@
-Enter kind of session:
-Enter account holder's name:
-Enter transaction:
+Welcome to the Bank System
+Enter command: 
+Session type: 
+Logged in as standard
+Enter account holder's name: 
+Enter command:

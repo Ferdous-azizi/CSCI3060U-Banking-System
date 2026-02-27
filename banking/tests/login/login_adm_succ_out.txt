@@ -1,2 +1,5 @@
-Enter kind of session:
-Enter transaction:
+Welcome to the Bank System
+Enter command: 
+Session type: 
+Logged in as admin
+Enter command:

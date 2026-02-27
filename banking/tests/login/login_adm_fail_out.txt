@@ -1,4 +1,5 @@
-Enter kind of session:
-Error: Invalid session type.
-Enter kind of session:
-Enter transaction:
+Welcome to the Bank System
+Enter command: 
+Session type: 
+ERROR: INVALID SESSION TYPE
+Enter command:
