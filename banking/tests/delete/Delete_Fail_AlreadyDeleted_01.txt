@@ -1,11 +1,11 @@
-login admin
-John Doe
+login
+admin
 delete
 Test Delete User
 9990001
 logout
-login admin
-John Doe
+login
+admin
 delete
 Test Delete User
 9990001

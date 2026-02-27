@@ -1,5 +1,5 @@
-login admin
-John Doe
+login
+admin
 delete
 Non Existent User
 logout

@@ -1,4 +1,5 @@
-login standard
+login
+standard
 Alice Smith
 delete
 logout

@@ -1,6 +1,5 @@
-login standard
-12345
-disable
+login
+standard
 John Doe
-10001
+disable
 logout

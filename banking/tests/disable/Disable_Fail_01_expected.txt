@@ -1,13 +1,11 @@
 Welcome to the Bank System
-Enter session type (standard/admin): admin
+Enter command: 
+Enter session type: 
 Logged in as admin
-Enter transaction: disable
-Enter account holder name: Invalid Name
-Error: Account holder 'Invalid Name' not found
-Try again? (yes/no): yes
-Enter account holder name: John Doe
-Enter account number: 9999999
-Error: Account number 9999999 does not belong to John Doe
-Try again? (yes/no): no
-Enter transaction: logout
-Transaction file written. Logged out.
+Enter command: 
+Enter account holder name: 
+Enter account number: 
+ERROR: INVALID ACCOUNT
+Enter command: 
+Logged out. Saving transaction file...
+Enter command: 

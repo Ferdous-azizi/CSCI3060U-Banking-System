@@ -1,7 +1,6 @@
-login standard
-20002
-changeplan
+login
+standard
 Jane Smith
+changeplan
 20002
-NP
 logout

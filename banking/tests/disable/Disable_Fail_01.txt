@@ -1,5 +1,5 @@
-login admin
-00000
+login
+admin
 disable
 Invalid Name
 99999

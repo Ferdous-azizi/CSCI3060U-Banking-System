@@ -1,5 +1,5 @@
-login admin
-00000
+login
+admin
 disable
 NonExistent Name
 10001

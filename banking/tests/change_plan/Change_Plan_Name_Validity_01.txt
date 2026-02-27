@@ -1,7 +1,6 @@
-login admin
-00000
+login
+admin
 changeplan
 NonExistent Person
 20002
-NP
 logout

@@ -1,7 +1,6 @@
-login admin
-00000
+login
+admin
 changeplan
 Jane Smith
 99999
-NP
 logout

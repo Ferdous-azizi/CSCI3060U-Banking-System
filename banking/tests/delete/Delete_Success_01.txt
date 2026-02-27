@@ -1,5 +1,5 @@
-login admin
-John Doe
+login
+admin
 delete
 Test Delete User
 9990001

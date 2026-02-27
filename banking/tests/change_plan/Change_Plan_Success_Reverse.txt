@@ -1,7 +1,6 @@
-login admin
-00000
+login
+admin
 changeplan
 Jane Smith
 20002
-SP
 logout

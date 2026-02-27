@@ -1,19 +1,18 @@
-login admin
-John Doe
+login
+admin
 delete
-Test Delete User2
+Bob Wilson
 9990002
 logout
-login standard
+login
+standard
 Bob Wilson
 withdrawal
 9990002
-100
 logout
-login admin
-John Doe
+login
+admin
 deposit
-Test Delete User2
+Bob Wilson
 9990002
-100
 logout

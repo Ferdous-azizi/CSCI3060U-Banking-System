@@ -1,8 +1,10 @@
 Welcome to the Bank System
-Enter session type (standard/admin): standard
-Enter account holder name: Alice Smith
-Logged in as: Alice Smith
-Enter transaction: delete
-Error: Transaction not available for standard sessions
-Enter transaction: logout
-Transaction file written. Logged out.
+Enter command: 
+Enter session type: 
+Enter account holder's name: 
+Logged in as Alice Smith
+Enter command: 
+ERROR: Admin only.
+Enter command: 
+Logged out. Saving transaction file...
+Enter command: 

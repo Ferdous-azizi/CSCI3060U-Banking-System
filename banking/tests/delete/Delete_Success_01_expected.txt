@@ -1,10 +1,11 @@
 Welcome to the Bank System
-Enter session type (standard/admin): admin
-Enter admin name: John Doe
-Logged in as admin: John Doe
-Enter transaction: delete
-Enter account holder name: Test Delete User
-Enter account number: 9990001
-Account 9990001 deleted successfully
-Enter transaction: logout
-Transaction file written. Logged out.
+Enter command: 
+Enter session type: 
+Logged in as admin
+Enter command: 
+Enter account holder's name: 
+Enter account number: 
+Account deletion recorded.
+Enter command: 
+Logged out. Saving transaction file...
+Enter command: 

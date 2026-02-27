@@ -1,9 +1,9 @@
-login admin
-00000
+login
+admin
 disable
 John Doe
 10001
 withdrawal
+John Doe
 10001
-10
 logout
