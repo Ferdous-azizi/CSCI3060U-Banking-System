@@ -1,5 +1,10 @@
-ERROR! account is not logged into.
-Enter kind of session:
-Enter account holder's name:
-
-
+Welcome to the Bank System
+Enter command: 
+ERROR: Must login first.
+Enter command: 
+Session type: 
+Logged in as standard
+Enter account holder's name: 
+Enter command: 
+Logged out. Saving transaction file...
+Enter command: 

@@ -1,5 +1,10 @@
-Enter kind of session:
-Enter transaction:
-Enter name of account holder:
-Error: entered name is more than 20 characters, please enter a valid name or logout
-Saving transaction history...
+Welcome to the Bank System
+Enter command: 
+Session type: 
+logged in as admin
+Enter command: 
+Enter new account holder's name: 
+Enter account number: 
+Enter initial balance: 
+Invalid information provided
+Enter command: 

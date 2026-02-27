@@ -1,6 +1,9 @@
-Enter kind of session:
-Enter account holder's name:
-Enter transaction:
-Enter account number:
-Invalid input, please try again or logout
-Saving transaction history...
+Welcome to the Bank System
+Enter command: 
+Session type: 
+logged in as standard
+Enter account holder's name: 
+Enter command: 
+Enter account number: 
+ERROR: INVALID ACCOUNT
+Enter command: 

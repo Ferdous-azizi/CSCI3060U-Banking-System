@@ -1,4 +1,7 @@
-Please enter session type:
-Please enter transaction:
-Error: Please enter a valid transaction
-Saving transaction history...
+Welcome to the Bank System
+Enter command: 
+Session type: 
+logged in as standard
+Enter command: 
+ERROR: Admin only.
+Enter command: 

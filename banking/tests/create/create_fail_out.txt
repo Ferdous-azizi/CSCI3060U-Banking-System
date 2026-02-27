@@ -1,7 +1,10 @@
-Enter kind of session:
-Enter transaction:
-Enter account holder name:
-Enter five-digit account number:
-Enter initial balance:
-Error: please enter a numerical value of at most 99999.99 or logout
-Saving transaction history...
+Welcome to the Bank System
+Enter command: 
+Session type: 
+logged in as admin
+Enter command: 
+Enter new account holder's name: 
+Enter account number: 
+Enter initial balance: 
+Invalid information provided
+Enter command: 

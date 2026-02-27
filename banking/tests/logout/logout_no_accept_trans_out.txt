@@ -1,10 +1,23 @@
-Enter kind of session:
-Enter transaction:
-ERROR! account not logged into.
-ERROR! account not logged into.
-ERROR! account not logged into.
-ERROR! account not logged into.
-ERROR! account not logged into.
-ERROR! account not logged into.
-ERROR! account not logged into.
-ERROR! account not logged into.
+Welcome to the Bank System
+Enter command: 
+Session type: 
+Logged in as admin
+Enter command: 
+Logged out. Saving transaction file...
+Enter command: 
+ERROR: Must login first.
+Enter command: 
+ERROR: Must login first.
+Enter command: 
+ERROR: Must login first.
+Enter command: 
+ERROR: Must login first.
+Enter command: 
+ERROR: Must login first.
+Enter command: 
+ERROR: Must login first.
+Enter command: 
+ERROR: Must login first.
+Enter command: 
+ERROR: Must login first.
+Enter command: 
