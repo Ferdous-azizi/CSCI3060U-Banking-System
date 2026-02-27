@@ -3,8 +3,8 @@ Enter command:
 ERROR: Must login first.
 Enter command: 
 Session type: 
-Logged in as standard
 Enter account holder's name: 
+Logged in as John Doe
 Enter command: 
 Logged out. Saving transaction file...
 Enter command: 

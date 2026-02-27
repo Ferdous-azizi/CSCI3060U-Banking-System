@@ -1,8 +1,8 @@
 Welcome to the Bank System
 Enter command: 
 Session type: 
-Logged in as standard
 Enter account holder's name: 
+Logged in as John Doe
 Enter command:
 Error: Already logged in
 Enter command:

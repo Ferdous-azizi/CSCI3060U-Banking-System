@@ -1,6 +1,6 @@
 Welcome to the Bank System
 Enter command: 
 Session type: 
-Logged in as standard
 Enter account holder's name: 
+Logged in as John Doe
 ERROR: INVALID NAME

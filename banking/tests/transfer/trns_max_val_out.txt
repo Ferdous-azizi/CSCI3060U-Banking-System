@@ -1,7 +1,13 @@
-Enter kind of session:
-Enter account holder's name:
-Enter transaction:
-Enter account number:
-Enter account number to transfer to:
-Invalid Input, please try again or logout
-saving transaction history...
+Welcome to the Bank System
+Enter command: 
+Session type: 
+Enter account holder's name: 
+Logged in as John Doe
+Enter command: 
+Enter account number: 
+Enter account number to transfer to: 
+Enter amount to transfer: 
+ERROR: Standard session transfer is limit 1000
+Enter command: 
+Logged out. Saving transaction file...
+Enter command: 

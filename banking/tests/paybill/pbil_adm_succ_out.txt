@@ -1,6 +1,13 @@
-Enter kind of session:
-Enter transaction:
-Enter account number:
-Enter company name:
-Enter amount:
-Saving transaction history...
+Welcome to the Bank System
+Enter command: 
+Session type: 
+Logged in as admin
+Enter command: 
+Enter account holder's name: 
+Enter account number: 
+Enter the company you wish to pay: 
+Enter amount to pay: 
+paybill processed
+Enter command: 
+Logged out. Saving transaction file...
+Enter command: 

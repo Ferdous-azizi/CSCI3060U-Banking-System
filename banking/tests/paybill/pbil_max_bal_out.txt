@@ -1,7 +1,13 @@
-Enter kind of session:
-Enter transaction:
-Enter account number:
-Enter company name:
-Enter amount:
-Invalid input, please try again or logout
-Saving transaction history...
+Welcome to the Bank System
+Enter command: 
+Session type: 
+Enter account holder's name: 
+Logged in as John Doe
+Enter command: 
+Enter account number: 
+Enter the company you wish to pay: 
+Enter amount to pay: 
+ERROR: WITHDRAWAL EXCEEDS CURRENT BALANCE
+Enter command: 
+Logged out. Saving transaction file...
+Enter command: 

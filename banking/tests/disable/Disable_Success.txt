@@ -1,4 +1,5 @@
-login admin
+login
+admin
 00000
 disable
 John Doe
