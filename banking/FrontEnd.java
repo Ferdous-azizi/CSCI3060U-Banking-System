@@ -28,6 +28,7 @@ public class FrontEnd {
     public static void main(String[] args) {
         if(args.length != 2){
             System.out.println("Please input with the current list of bank accounts and transaction log files as inputs");
+            return; // Added return to exit if arguments are wrong
         }
 
         accountsFile = new File(args[0]);
@@ -55,6 +56,7 @@ public class FrontEnd {
                 System.out.println("ERROR: Must login first.");
             }
         }
+        input.close(); // Good practice to close scanner
     }
 
     //method to login
@@ -70,7 +72,6 @@ public class FrontEnd {
     }
 
     //logic for handling each transaction
-    //SWITCH STATEMENT FOR SIMPLE, CLEAR PROTOTYPE CODE, CAN BE ADJUSTED TO BE CLOSER TO DESIGN DOCUMENT
     private static void handleTransaction(String cmd, Scanner scanner) {
         // Add logic for transfer, deposit and etc. here
         switch (cmd) {
@@ -87,7 +88,13 @@ public class FrontEnd {
                     break;
                 }
                 System.out.print("Enter amount to withdraw: ");
-                double withdrawAmount = Double.parseDouble(scanner.nextLine());
+                double withdrawAmount;
+                try {
+                    withdrawAmount = Double.parseDouble(scanner.nextLine());
+                } catch (NumberFormatException e) {
+                    System.out.println("ERROR: Invalid amount format");
+                    break;
+                }
                 if(!validateFundLoss(withdrawAcc, withdrawAmount)){
                     System.out.println("ERROR: WITHDRAWAL EXCEEDS CURRENT BALANCE");
                     break;
@@ -108,12 +115,25 @@ public class FrontEnd {
                     System.out.print("Enter account number: ");
                     String accNum = scanner.nextLine();
                     System.out.print("Enter initial balance: ");
-                    Double initBal = Double.parseDouble(scanner.nextLine());
+                    Double initBal;
+                    try {
+                        initBal = Double.parseDouble(scanner.nextLine());
+                    } catch (NumberFormatException e) {
+                        System.out.println("ERROR: Invalid amount format");
+                        break;
+                    }
                     //create NEW ACC
                     if(accNum.length() > 5 || newAcc.length() > 20){
                         System.out.println("Invalid information provided");
+                        break;
                     }
-                    accountList.removeLast();
+
+                    // FIXED: Replace removeLast() with index-based removal
+                    if (!accountList.isEmpty()) {
+                        // Remove the last element (which should be the "End_Of_File" marker)
+                        accountList.remove(accountList.size() - 1);
+                    }
+
                     while(newAcc.length() < 20){
                         newAcc = newAcc + "_";
                     }
@@ -143,7 +163,13 @@ public class FrontEnd {
                     break;
                 }
                 System.out.print("Enter amount to deposit: ");
-                double depositAmount = Double.parseDouble(scanner.nextLine());
+                double depositAmount;
+                try {
+                    depositAmount = Double.parseDouble(scanner.nextLine());
+                } catch (NumberFormatException e) {
+                    System.out.println("ERROR: Invalid amount format");
+                    break;
+                }
                 recordTransaction("04",holderName,depositAcc,depositAmount,"00");
                 System.out.println("Deposit processed");
                 break;
@@ -166,7 +192,13 @@ public class FrontEnd {
                     break;
                 }
                 System.out.print("Enter amount to transfer: ");
-                double transferAmount = Double.parseDouble(scanner.nextLine());
+                double transferAmount;
+                try {
+                    transferAmount = Double.parseDouble(scanner.nextLine());
+                } catch (NumberFormatException e) {
+                    System.out.println("ERROR: Invalid amount format");
+                    break;
+                }
                 if(!validateFundLoss(fromAcc, transferAmount)){
                     System.out.println("ERROR: WITHDRAWAL EXCEEDS CURRENT BALANCE");
                     break;
@@ -176,7 +208,6 @@ public class FrontEnd {
                 }
                 else{
                     recordTransaction("02",holderName,fromAcc,transferAmount,"00");
-                    //record deposit for the account being transferred to?
                     System.out.println("Transfer processed");
                 }
                 break;
@@ -199,7 +230,13 @@ public class FrontEnd {
                     break;
                 }
                 System.out.print("Enter amount to pay: ");
-                double paybillAmount = Double.parseDouble(scanner.nextLine());
+                double paybillAmount;
+                try {
+                    paybillAmount = Double.parseDouble(scanner.nextLine());
+                } catch (NumberFormatException e) {
+                    System.out.println("ERROR: Invalid amount format");
+                    break;
+                }
                 if(!validateFundLoss(numAcc, paybillAmount)){
                     System.out.println("ERROR: WITHDRAWAL EXCEEDS CURRENT BALANCE");
                     break;
@@ -295,46 +332,54 @@ public class FrontEnd {
         System.out.println("Logged out. Saving transaction file...");
     }
 
-    //method for reading from current_bank_account, disabled due to lack of said file
+    //method for reading from current_bank_account
     private static void readFile(File file){
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String account;
+            accountList.clear(); // Clear existing list before reading
             while ((account = br.readLine()) != null) {
                 accountList.add(account);
             }
         } catch (IOException e) {
-            System.out.println("Error reading file.");
+            System.out.println("Error reading file: " + e.getMessage());
         }
     }
 
-    //method for writing to bank_account_transactions, disabled due to lack of said file
+    //method for writing to bank_account_transactions
     private static void writeFile(File file){
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))){
             for(String transaction : transactionsList){
                 bw.write(transaction);
                 bw.newLine();
             }
+            System.out.println("Transaction file written successfully.");
         }
         catch(IOException e){
-            System.out.println("Error writing file.");
+            System.out.println("Error writing file: " + e.getMessage());
         }
     }
     //method to format and record transactions in transactionList
     private static void recordTransaction(String tsCode,String holderName,String accNum, Double funds,String misc){
-        while(holderName.length() != 20){
-            holderName = holderName.concat("_");
+        String formattedHolder = holderName;
+        while(formattedHolder.length() < 20){
+            formattedHolder = formattedHolder.concat("_");
         }
-        holderName = holderName.replaceAll(" ","_");
-        while (accNum.length() != 5){
-            accNum = "0" + accNum;
+        if (formattedHolder.length() > 20) {
+            formattedHolder = formattedHolder.substring(0, 20);
+        }
+        formattedHolder = formattedHolder.replaceAll(" ","_");
+
+        String formattedAcc = accNum;
+        while (formattedAcc.length() < 5){
+            formattedAcc = "0" + formattedAcc;
         }
 
-        String fundsStr = funds.toString();
-        while(fundsStr.length() != 6){
+        String fundsStr = String.format("%08.2f", funds).replace(".", "");
+        while(fundsStr.length() < 8){
             fundsStr = "0" + fundsStr;
         }
-        fundsStr = fundsStr + "0";
-        String transaction = tsCode + "_" + holderName + "_" + accNum + "_" + fundsStr + "_" + misc;
+
+        String transaction = tsCode + "_" + formattedHolder + "_" + formattedAcc + "_" + fundsStr + "_" + misc;
         System.out.println(transaction); //temp print statement for correctness
         transactionsList.add(transaction);
     }
@@ -342,53 +387,64 @@ public class FrontEnd {
         if(holderName.length() > 20){
             return false;
         }
-        while(holderName.length() != 20){
-            holderName = holderName.concat("_");
+        String formattedHolder = holderName;
+        while(formattedHolder.length() < 20){
+            formattedHolder = formattedHolder.concat("_");
         }
-        holderName = holderName.replaceAll(" ","_");
+        formattedHolder = formattedHolder.replaceAll(" ","_");
+
+        String formattedAcc = accNum;
         if(accNum.length() > 5){
             return false;
         }
-        while (accNum.length() != 5){
-            accNum = "0" + accNum;
+        while (formattedAcc.length() < 5){
+            formattedAcc = "0" + formattedAcc;
         }
         for(String account : accountList){
-            if(accNum.equals(account.substring(0, 5)) && holderName.equals(account.substring(6,26)) 
-            && account.charAt(26) == 'A'){
+            if(account.length() >= 26 &&
+                    formattedAcc.equals(account.substring(0, 5)) &&
+                    formattedHolder.equals(account.substring(6,26)) &&
+                    account.charAt(26) == 'A'){
                 return true;
             }
         }
         return false;
     }
-    private static boolean validateFundLoss(String accNum,Double moneyToLose){
-        String moneyInAccount = "0.0";
+    private static boolean validateFundLoss(String accNum, Double moneyToLose){
+        String moneyInAccount = "00000000";
+        String formattedAcc = accNum;
         if(accNum.length() > 5){
             return false;
         }
-        while (accNum.length() != 5){
-            accNum = "0" + accNum;
+        while (formattedAcc.length() < 5){
+            formattedAcc = "0" + formattedAcc;
         }
         for(String account : accountList){
-            if(accNum.equals(account.substring(0,5))){
-                moneyInAccount = account.substring(29);
+            if(account.length() >= 34 && formattedAcc.equals(account.substring(0,5))){
+                moneyInAccount = account.substring(27, 35); // Fixed index for balance
+                break;
             }
         }
-        if((Double.parseDouble(moneyInAccount) - moneyToLose) > 0){
-            return true;
-        }
-        else{
+        double balance;
+        try {
+            balance = Double.parseDouble(moneyInAccount) / 100; // Assuming cents format
+        } catch (NumberFormatException e) {
             return false;
         }
+        return balance >= moneyToLose;
     }
     private static boolean validateAccountNoName(String accNum){
+        String formattedAcc = accNum;
         if(accNum.length() > 5){
             return false;
         }
-        while (accNum.length() != 5){
-            accNum = "0" + accNum;
+        while (formattedAcc.length() < 5){
+            formattedAcc = "0" + formattedAcc;
         }
         for(String account : accountList){
-            if(accNum.equals(account.substring(0,5)) && account.charAt(26) == 'A'){
+            if(account.length() >= 27 &&
+                    formattedAcc.equals(account.substring(0,5)) &&
+                    account.charAt(26) == 'A'){
                 return true;
             }
         }
