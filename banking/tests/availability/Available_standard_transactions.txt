@@ -1,0 +1,14 @@
+login
+standard
+John Doe
+deposit
+12345
+100.00
+withdrawal
+12345
+200.00
+transfer
+12345
+54321
+300.00
+logout

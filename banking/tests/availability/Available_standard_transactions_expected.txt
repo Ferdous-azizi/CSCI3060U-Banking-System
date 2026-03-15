@@ -1,0 +1,21 @@
+Welcome to the Bank System
+Enter command: login
+Session type: standard
+Logged in as standard
+Enter account holder's name: John Doe
+Enter command: deposit
+Enter account number: 12345
+Enter amount to deposit: 100.00
+Deposit processed
+Enter command: withdrawal
+Enter account number: 12345
+Enter amount to withdraw: 200.00
+Withdrawal processed.
+Enter command: transfer
+Enter account number: 12345
+Enter account number to transfer to: 54321
+Enter amount to transfer: 300.00
+Transfer processed
+Enter command: logout
+Logged out. Saving transaction file...
+Transaction file written successfully.

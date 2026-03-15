@@ -1,7 +1,3 @@
 Welcome to the Bank System
-Enter command: ERROR: Must login first.
-Enter command: ERROR: Must login first.
-Enter command: ERROR: Must login first.
-Enter command: ERROR: Must login first.
-Enter command: 00_N/A__________________00000_0000.00_00
-Logged out. Saving transaction file...
+Enter command: Session type: Logged in as admin
+Enter command: Enter account holder's name: Enter account number: ERROR: INVALID ACCOUNT

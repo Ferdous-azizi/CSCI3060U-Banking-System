@@ -380,7 +380,7 @@ public class FrontEnd {
         }
 
         String transaction = tsCode + "_" + formattedHolder + "_" + formattedAcc + "_" + fundsStr + "_" + misc;
-        System.out.println(transaction); //temp print statement for correctness
+        //System.out.println(transaction); //temp print statement for correctness
         transactionsList.add(transaction);
     }
     private static boolean validateAccount(String accNum,String holderName){
