@@ -35,7 +35,7 @@ class backEndController:
                         account.balance += transaction.amount
             # create transaction (currently always sets plan to non-student)
             elif transaction.code == "05":
-                self.accounts.append((transaction.number, transaction.name, "A", transaction.amount, "NP"))
+                self.accounts.append(Account(transaction.number, transaction.name, "A", transaction.amount, "NP"))
             # delete transaction (waiting on account list implementation)
             elif transaction.code == "06":
                 for account in self.accounts:
