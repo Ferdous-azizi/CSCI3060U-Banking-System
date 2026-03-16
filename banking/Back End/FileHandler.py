@@ -118,17 +118,25 @@ class FileHandler:
                     continue                
         return transactions
 
+    """
+    Writes New Master Accounts File
+    Format: NNNNN_AAAAAAAAAAAAAAAAAAAA_S_PPPPPPPP_TTTT_LL
+    N = Bank account number, A = Account holder's name, S = bank account status
+    P = current balance of account, T = total number of transactions, L = plan type, _ = a space
+    """
     def write_new_master_file(file_path,accounts):
-        #the same as write_current_accounts_file? may not a seperate method for the two
+        #logic of write_current_accounts_file to be updated and applied to this method instead
         pass
 
     """
-    Writes Current Bank Accounts File with strict validation
-    Format: NNNNN AAAAAAAAAAAAAAAAAAAA S PPPPPPPP TT
-    Where TT is account plan (SP or NP)
+    Writes a file containing every current bank account in the New Master Accounts File
+    Format: NNNNN_AAAAAAAAAAAAAAAAAAAA_S_PPPPPPPP
+    N = Bank account number, A = Account holder's name, S = bank account status
+    P = current balance of account, _ = a space
     """
     def write_current_accounts_file(file_path,accounts):
-       
+        # note: to be updated to match logic specified in requirements
+
         # note: starter code logic, provided from assignment instructions, change if needed
         # note: code refrences acc as a dict, change account to dict format or change acc calls in method
         # note: adjusts to be made to account logic as a whole
