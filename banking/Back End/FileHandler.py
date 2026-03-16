@@ -1,12 +1,13 @@
 from Transaction import Transaction
 from Account import Account
-
+# Class that handles low level text file readings for the old bank and transaction files and writing of the updated ones
 class FileHandler:
+    """
+    Reads and validates the bank account file format with plan type (SP/NP)
+    Returns list of accounts and prints fatal errors for invalid format
+    """
     def read_master_file(file_path):
-        """
-        Reads and validates the bank account file format with plan type (SP/NP)
-        Returns list of accounts and prints fatal errors for invalid format
-        """
+        
         # note: starter code logic, provided from assignment instructions, change if needed
         # note: code refrences acc as a dict, change account to dict format or change acc calls in method
         # note: adjusts to be made to account logic as a whole
@@ -88,6 +89,10 @@ class FileHandler:
                     continue
         return accounts
 
+    """
+    Reads and validates the merged bank account transaction file
+    Returns list of tranactoin and prints fatal errors for invalid format
+    """
     def read_transaction_file(file_path):
         transactions = []
         with open(file_path,'r') as file:
@@ -117,12 +122,13 @@ class FileHandler:
         #the same as write_current_accounts_file? may not a seperate method for the two
         pass
 
+    """
+    Writes Current Bank Accounts File with strict validation
+    Format: NNNNN AAAAAAAAAAAAAAAAAAAA S PPPPPPPP TT
+    Where TT is account plan (SP or NP)
+    """
     def write_current_accounts_file(file_path,accounts):
-        """
-        Writes Current Bank Accounts File with strict validation
-        Format: NNNNN AAAAAAAAAAAAAAAAAAAA S PPPPPPPP TT
-        Where TT is account plan (SP or NP)
-        """
+       
         # note: starter code logic, provided from assignment instructions, change if needed
         # note: code refrences acc as a dict, change account to dict format or change acc calls in method
         # note: adjusts to be made to account logic as a whole

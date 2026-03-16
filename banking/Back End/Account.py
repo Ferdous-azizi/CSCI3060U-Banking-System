@@ -1,5 +1,7 @@
 #note: assumes bank account has a plan from current bank accounts, readjust if not the case
+# Class to store and retrieve account details and enforces service fee
 class Account:
+    # Parameterized constructor
     def __init__(self,account_number,name,status,balance,plan):
         self.account_number = account_number
         self.name = name
