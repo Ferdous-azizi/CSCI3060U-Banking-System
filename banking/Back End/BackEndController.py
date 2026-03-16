@@ -21,6 +21,37 @@ class backEndController:
         pass
     
     # iterates through list of tranactions, applying appropriate logic to target accounts
-    def processTransactions():
-        #apply fee based on transaction to account (+ num if postive eg. deposit,-if num if negative eg. withdrawal)
-        pass
+    def processTransactions(self):
+        for transaction in self.transactions:
+            # subtractive transactions (withdrawl, transfer, paybill)
+            if transaction.code == "01" or transaction.code == "02" or transaction.code == "03":
+                for account in self.accounts:
+                    if transaction.name == account.name and transaction.number == account.number:
+                        account.balance -= transaction.amount
+            # deposit transaction
+            elif transaction.code == "04":
+                for account in self.accounts:
+                    if transaction.name == account.name and transaction.number == account.number:
+                        account.balance += transaction.amount
+            # create transaction (currently always sets plan to non-student)
+            elif transaction.code == "05":
+                self.accounts.append((transaction.number, transaction.name, "A", transaction.amount, "NP"))
+            # delete transaction (waiting on account list implementation)
+            elif transaction.code == "06":
+                for account in self.accounts:
+                    if transaction.name == account.name and transaction.number == account.number:
+                        # self.accounts.remove(transaction.number)
+                        pass
+            # disable transaction (currently only sets to disabled)
+            elif transaction.code == "07":
+                for account in self.accounts:
+                    if transaction.name == account.name and transaction.number == account.number:
+                        account.status = "D"
+            # changeplan transaction
+            elif transaction.code == "08":
+                for account in self.accounts:
+                    if transaction.name == account.name and transaction.number == account.number:
+                        if account.plan == "NP":
+                            account.plan = "SP"
+                        else:
+                            account.plan = "NP"
