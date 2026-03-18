@@ -1,0 +1,4 @@
+10001 John Doe             A 01000.00 0005 SP
+20002 Jane Smith           A 00500.00 0002 NP
+30003 Delete Me            A 00000.00 0000 NP
+00000 END_OF_FILE          A 00000.00 0000 NP
