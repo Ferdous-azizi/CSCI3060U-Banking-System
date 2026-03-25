@@ -1,6 +1,18 @@
 from FileHandler import FileHandler
 from Account import Account
 
+'''
+The overall back end program that handles the end of day work of
+updating the master bank accounts file with any and all transactions
+recorded in the transaction log
+
+Input files: old_master.txt (old master file), merged_transactions.txt (transaction log)
+Output files: new_master.txt (new master file) (note: new master file also serves as new current accounts file)
+How to run: currently run as a python file from BackEndController, reliant on all files in the BackEnd folder
+            can be changed in order to accept file input from the command line if nessacry in later phases
+'''
+
+
 # Main driver class that manages the overall flow of the daily back-end processing
 class BackEndController:
     def __init__(self, old_master, transaction_log, new_master):
