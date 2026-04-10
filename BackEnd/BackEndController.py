@@ -1,5 +1,6 @@
 from FileHandler import FileHandler
 from Account import Account
+import sys
 
 '''
 The overall back end program that handles the end of day work of
@@ -72,5 +73,11 @@ class BackEndController:
 
 # Entry point for the back-end system
 if __name__ == "__main__":
-    controller = BackEndController("old_master.txt", "merged_transactions.txt", "new_master.txt")
+    if len(sys.argv) != 4:
+        controller = BackEndController("old_master.txt", "merged_transactions.txt", "new_master.txt")
+    else:
+        old_master = sys.argv[1]
+        merged_transactions = sys.argv[2]
+        new_master = sys.argv[3]
+        controller = BackEndController(old_master,merged_transactions,new_master)
     controller.run()
